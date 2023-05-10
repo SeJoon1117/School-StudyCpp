@@ -15,5 +15,5 @@ int main() {
 	Rectangle rect;
 	rect.h = 3;
 	rect.w = 5;
-	cout << "»ç°¢ÇüÀÇ ¸éÀûÀº" << rect.getArea();
+	cout << "ì‚¬ê°í˜•ì˜ ë©´ì ì€" << rect.getArea();
 }
