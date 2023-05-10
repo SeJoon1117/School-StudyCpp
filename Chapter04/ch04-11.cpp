@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	string str;
-	string address("¼­¿ï½Ã ¼ººÏ±¸ »ï¼±µ¿ 389");
+	string address("ì„œìš¸ì‹œ ì„±ë¶êµ¬ ì‚¼ì„ ë™ 389");
 	string addresscopy(address);
 
 	char text[] = { 'L','O','V','E',' ','C','+','+','\n' };
