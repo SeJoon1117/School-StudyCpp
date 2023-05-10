@@ -5,7 +5,7 @@
 using namespace std;
 
 void Calculator::run() {
-	cout << "µÎ °³ÀÇ ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä>>";
+	cout << "ë‘ ê°œì˜ ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”";
 	int a, b;
 	cin >> a >> b; 
 	Adder adder(a, b); 
