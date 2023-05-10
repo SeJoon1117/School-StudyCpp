@@ -16,6 +16,6 @@ int Tower::getH(){
 int main() {
 	Tower myTower;
 	Tower seoulTower(100);
-	cout << "³ôÀÌ´Â" << myTower.getH() << "¹ÌÅÍ\n";
-	cout << "³ôÀÌ´Â" << seoulTower.getH() << "¹ÌÅÍ\n";
+	cout << "ë†’ì´ëŠ” " << myTower.getH() << "ë¯¸í„°\n";
+	cout << "ë†’ì´ëŠ”" << seoulTower.getH() << "ë¯¸í„°\n";
 }
