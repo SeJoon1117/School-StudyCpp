@@ -20,15 +20,15 @@ int main() {
 	CircleArray[0].setRadius(10);
 	CircleArray[1].setRadius(20);
 	CircleArray[2].setRadius(30);
-
+	
 	for (int i = 0; i < 3; i++) {
-		cout << "Circle" << i << "ÀÇ ¸éÀûÀº" << CircleArray[i].getArea() << '\n';
+		cout << "Circle" << i << "ì˜ ë©´ì ì€" << CircleArray[i].getArea() << '\n';
 	}
 
 	Circle* p;
 	p = CircleArray;
 	for (int i = 0; i < 3; i++) {
-		cout << "Circle" << i << "ÀÇ ¸éÀûÀº" << p->getArea() << '\n';
+		cout << "Circle" << i << "ì˜ ë©´ì ì€" << p->getArea() << '\n';
 		p++;
 	}
 }
