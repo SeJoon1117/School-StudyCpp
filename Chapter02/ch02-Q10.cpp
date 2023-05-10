@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	cout << "¹®ÀÚ¿­ ÀÔ·Â>>";
+	cout << "ë¬¸ìžì—´ ìž…ë ¥>>";
 	char ch[50];
 	cin >> ch;
 	int len = strlen(ch);
