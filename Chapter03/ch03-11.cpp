@@ -1,6 +1,6 @@
 #include "Calculator.h"
 
 int main() {
-	Calculator calc; // calc °´Ã¼ »ý¼º
-	calc.run(); // °è»ê±â ½ÃÀÛ
-}
+	Calculator calc; // calc ê°ì²´ ìƒì„±
+	calc.run(); // ê³„ì‚°ê¸° ì‹œìž‘
+}
