@@ -15,9 +15,9 @@ int main() {
 	Circle donut;
 	donut.r = 1;
 	double area = donut.getArea();
-	cout << "donut ¸éÀûÀº" << area << endl;
+	cout << "donut ë©´ì ì€" << area << endl;
 
 	Circle pizze;
 	pizze.r = 30;
-	cout << "pizze ¸éÀûÀº" << pizze.getArea();
+	cout << "pizze ë©´ì ì€" << pizze.getArea();
 }
