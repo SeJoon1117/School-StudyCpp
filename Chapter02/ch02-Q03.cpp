@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	cout << "µÎ ¼ö¸¦ ÀÔ·ÂÇÏ¶ó>>";
+	cout << "ë‘ ìˆ˜ë¥¼ ìž…ë ¥í•˜ë¼>>";
 	int a, b, big;
 	cin >> a >> b;
 	if (a < b) {
@@ -11,5 +11,5 @@ int main() {
 	else {
 		big = a;
 	}
-	cout << "Å« ¼ö = " << big;
+	cout << "í° ìˆ˜ = " << big;
 }
