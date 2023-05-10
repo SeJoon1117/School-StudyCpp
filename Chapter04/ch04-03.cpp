@@ -12,6 +12,6 @@ int main() {
 	Circle circleArray[3] = { Circle(10),Circle(20),Circle(30) };
 
 	for (int i = 0; i < 3; i++) {
-		cout << "Circle" << i << "ÀÇ ¸éÀûÀº" << circleArray[i].getArea() << endl;
+		cout << "Circle" << i << "ì˜ ë©´ì ì€" << circleArray[i].getArea() << endl;
 	}
 }
