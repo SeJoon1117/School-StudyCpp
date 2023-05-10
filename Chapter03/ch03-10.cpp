@@ -13,5 +13,5 @@ double StructCircle::getArea() {
 }
 int main() {
 	StructCircle waffle(3);
-	cout << "¸éÀûÀº " << waffle.getArea();
+	cout << "ë©´ì ì€ " << waffle.getArea();
 }
