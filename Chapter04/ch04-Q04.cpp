@@ -34,5 +34,5 @@ int main() {
 	Sample s(10);
 	s.read();
 	s.write();
-	cout << "\n°¡Àå Å« ¼ö´Â" << s.big() << endl;
+	cout << "ê°€ì¥ í° ìˆ˜ëŠ” " << s.big() << endl;
 }
