@@ -22,7 +22,7 @@ Date::Date(string s) {
 }
 
 void Date::show() {
-	 cout << Y << "³â" << M << "¿ù" << D << "ÀÏ";
+	 cout << Y << "ë…„" << M << "ì›”" << D << "ì¼";
 	
 }
 
