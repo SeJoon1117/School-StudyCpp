@@ -2,13 +2,13 @@
 using namespace std;
 
 int main() {
-	cout << "ÀÌ¸§Àº?";
+	cout << "ì´ë¦„ì€?";
 	char name[100], address[100];
 	int age;
 	cin.getline(name, 100, '\n');
-	cout << "ÁÖ¼Ò´Â>";
+	cout << "ì£¼ì†ŒëŠ”?";
 	cin.getline(address, 100, '\n');
-	cout << "³ªÀÌ´Â?";
+	cout << "ë‚˜ì´ëŠ”?";
 	cin >> age;
 	cout << name << "," << address << "," << age;
 
