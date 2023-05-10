@@ -6,12 +6,12 @@ class num {
 };
 
 int main() {
-	cout << "Á¤¼ö 5°³ ÀÔ·Â >> ";
+	cout << "ì •ìˆ˜ 5ê°œ ì…ë ¥ >> ";
 	int* num = new int[5];
 	double sum = 0;
 	for (int i = 0; i < 5; i++) {
 		cin >> num[i];
 		sum = num[i] + sum;
 	}
-	cout << "Æò±Õ " << sum / 5;
+	cout << "Ã†Ã²Â±Ã• " << sum / 5;
 }
