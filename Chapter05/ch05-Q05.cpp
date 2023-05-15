@@ -7,7 +7,7 @@ public:
 	Circle(int r) { radius = r; }
 	int getRadius() { return radius; }
 	void setRadius(int r) { radius = r; }
-	void show() { cout << "¹İÁö¸§ÀÌ" << radius << "ÀÎ ¿ø" << endl; }
+	void show() { cout << "ë°˜ì§€ë¦„ì´ " << radius << "ì¸ ì›" << endl; }
 };
 
 void increaseBy(Circle &a, Circle &b) {
