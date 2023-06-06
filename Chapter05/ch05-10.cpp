@@ -1,47 +1,47 @@
-#define _CRT_SECURE_NO_WARNINGS
+#define _CRT_SECURE_NO_WARNINGS		//í”„ë¡œê·¸ë¨ì´ ë¹„ì •ìƒ ì¢…ë£Œë˜ëŠ” ê²½ìš°
 #include <iostream>
 #include <cstring>
 using namespace std;
-class Person { // Person Å¬·¡½º ¼±¾ğ
+class Person { 
 	char* name;
 	int id;
 public:
-	Person(int id, const char* name); // »ı¼ºÀÚ
-	~Person(); // ¼Ò¸êÀÚ
+	Person(int id, const char* name); 
+	~Person(); 
 	void changeName(const char* name);
 	void show() { cout << id << ',' << name << endl; }
 };
 
-Person::Person(int id, const char* name) { // »ı¼ºÀÚ
+Person::Person(int id, const char* name) { 
 	this->id = id;
-	int len = strlen(name); // nameÀÇ ¹®ÀÚ °³¼ö
-	this->name = new char[len + 1]; // name ¹®ÀÚ¿­ °ø°£ À´ç
-	strcpy(this->name, name); // name¿¡ ¹®ÀÚ¿­ º¹»ç
+	int len = strlen(name); 
+	this->name = new char[len + 1]; 
+	strcpy(this->name, name); 
 }
 
-Person::~Person() {// ¼Ò¸êÀÚ
-	if (name) // ¸¸ÀÏ name¿¡ µ¿Àû ÇÒ´çµÈ ¹è¿­ÀÌ ÀÖÀ¸¸é
-		delete[] name; // µ¿Àû ÇÒ´ç ¸Ş¸ğ¸® ¼Ò¸ê
+Person::~Person() {
+	if (name) 
+		delete[] name; 
 }
 
-void Person::changeName(const char* name) { // ÀÌ¸§ º¯°æ
+void Person::changeName(const char* name) { 
 	if (strlen(name) > strlen(this->name))
 		return;
 	strcpy(this->name, name);
 }
 
 int main() {
-	Person father(1, "Kitae"); // (1) father °´Ã¼ »ı¼º
-	Person daughter(father); // (2) daughter °´Ã¼ º¹»ç »ı¼º. º¹»ç»ı¼ºÀÚÈ£Ãâ
+	Person father(1, "Kitae"); 
+	Person daughter(father); 
 
-	cout << "daughter °´Ã¼ »ı¼º Á÷ÈÄ ----" << endl;
-	father.show(); // (3) father °´Ã¼ Ãâ·Â
-	daughter.show(); // (3) daughter °´Ã¼ Ãâ·Â
+	cout << "daughter ê°ì²´ ìƒì„± ì§í›„ ----" << endl;
+	father.show(); 
+	daughter.show(); 
 
-	daughter.changeName("Grace"); // (4) daughterÀÇ ÀÌ¸§À» "Grace"·Î º¯°æ
-	cout << "daughter ÀÌ¸§À» Grace·Î º¯°æÇÑ ÈÄ ----" << endl;
-	father.show(); // (5) father °´Ã¼ Ãâ·Â
-	daughter.show(); // (5) daughter °´Ã¼ Ãâ·Â
+	daughter.changeName("Grace"); 
+	cout << "daughter ì´ë¦„ì„ Graceë¡œ ë³€ê²½í•œ í›„ ----" << endl;
+	father.show();
+	daughter.show(); 
 
-	return 0; // (6), (7) daughter, father °´Ã¼ ¼Ò¸ê
+	return 0; 
 }
