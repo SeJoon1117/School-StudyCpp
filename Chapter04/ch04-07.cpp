@@ -4,9 +4,9 @@ using namespace std;
 class Circle {
 public:
 	int radius;
-	Circle() { radius = 1; cout << "»ý¼ºÀÚ ½ÇÇà radius= " << radius << '\n'; }
-	Circle(int r) { radius = r; cout << "»ý¼ºÀÚ ½ÇÇà radius= " << radius << '\n';	}
-	~Circle() { cout << "¼Ò¸êÀÚ ½ÇÇà radius= " << radius << '\n'; }
+	Circle() { radius = 1; cout << "ìƒì„±ìž ì‹¤í–‰ radius= " << radius << '\n'; }
+	Circle(int r) { radius = r; cout << "ìƒì„±ìž ì‹¤í–‰ radius= " << radius << '\n'; }
+	~Circle() { cout << "ì†Œë©¸ìž ì‹¤í–‰ radius= " << radius << '\n'; }
 	double getArea() { return 3.14 * radius * radius; }
 	void setRadius(int r) { radius = r; }
 };
