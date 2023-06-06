@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	cout << "에스프레소 2000원 아메리카노 2300원, 카푸치노 2500원입니다.\n";
+	cout << "에스프레소 2000원, 아메리카노 2300원, 카푸치노 2500원입니다.\n";
 	char coffee[100];
 	int num, money = 0;
 	for (money = 0; money < 20000;) {
