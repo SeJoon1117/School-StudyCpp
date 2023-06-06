@@ -13,5 +13,5 @@ int main() {
 		cin >> num[i];
 		sum = num[i] + sum;
 	}
-	cout << "Æò±Õ " << sum / 5;
+	cout << "평균 " << sum / 5;
 }
