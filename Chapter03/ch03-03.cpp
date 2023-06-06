@@ -10,11 +10,11 @@ public:
 };
 Circle::Circle() {
 	rad = 1;
-	cout << "¹ÝÁö¸§ÀÌ " << rad << "ÀÎ ¿ø »ý¼º\n";
+	cout << "ë°˜ì§€ë¦„ì´ " << rad << "ì¸ ì› ìƒì„±\n";
 }
 Circle::Circle(int r) {
 	rad = r;
-	cout << "¹ÝÁö¸§ÀÌ " << rad << "ÀÎ ¿ø»ý¼º\n";
+	cout << "ë°˜ì§€ë¦„ì´ " << rad << "ì¸ ì› ìƒì„±\n";
 }
 double Circle::getArea() {
 	return 3.14 * rad * rad;
@@ -22,8 +22,8 @@ double Circle::getArea() {
 
 int main() {
 	Circle donut;
-	cout << "donutÀÇ ¸éÀûÀº " << donut.getArea() << "\n";
+	cout << "donutì˜ ë©´ì ì€ " << donut.getArea() << "\n";
 
 	Circle pizza(30);
-	cout << "pizzaÀÇ ¸éÀûÀº " << pizza.getArea() << "\n";
+	cout << "pizzaì˜ ë©´ì ì€ " << pizza.getArea() << "\n";
 }
