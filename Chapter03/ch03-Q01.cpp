@@ -17,5 +17,5 @@ int main() {
 	Tower myTower;
 	Tower seoulTower(100);
 	cout << "높이는 " << myTower.getH() << "미터\n";
-	cout << "높이는" << seoulTower.getH() << "미터\n";
+	cout << "높이는 " << seoulTower.getH() << "미터\n";
 }
