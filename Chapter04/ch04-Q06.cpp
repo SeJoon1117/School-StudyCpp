@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	cout << "¾Æ·¡¿¡ ÇÑ ÁÙÀ» ÀÔ·ÂÇÏ¼¼¿ä.(exit¸¦ ÀÔ·ÂÇÏ¸é Á¾·áÇÕ´Ï´Ù.)\n";
+	cout << "ì•„ëž˜ì— í•œ ì¤„ì„ ìž…ë ¥í•˜ì„¸ìš”.(exitë¥¼ ìž…ë ¥í•˜ë©´ ì¢…ë£Œí•©ë‹ˆë‹¤.)\n";
 	string s;
 	while (true) {
 		cout << ">>";
@@ -12,8 +12,8 @@ int main() {
 			break;
 		}
 		int len = s.size();
-		for (int i = 0; i <= len; i++) {
-			cout << s.at(len - i);
+		for (int i = 1; i <= len; i++) {
+			cout << s.at(len - i) << endl;
 		}
 	}
 }
