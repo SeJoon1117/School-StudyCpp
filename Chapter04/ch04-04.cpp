@@ -22,7 +22,7 @@ int main() {
 
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 3; j++) {
-			cout << "Circle[" << i << "," << j << "의 면적은" << CircleArray[i][j].getArea() << '\n';
+			cout << "Circle[" << i << "," << j << "의 면적은 " << CircleArray[i][j].getArea() << '\n';
 		}
 	}
 }
