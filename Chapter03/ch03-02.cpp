@@ -15,5 +15,5 @@ int main() {
 	Rectangle rect;
 	rect.h = 3;
 	rect.w = 5;
-	cout << "사각형의 면적은" << rect.getArea();
+	cout << "사각형의 면적은 " << rect.getArea();
 }
