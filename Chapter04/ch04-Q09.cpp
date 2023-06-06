@@ -9,22 +9,22 @@ public:
 	Person() { ; }
 	string getName() { return name; }
 	string getTel() { return tel; }
-	void set(string name, string tel) { name = name, tel = tel; }
+	void set(string name, string tel) { this->name = name, this->tel = tel; }
 };
 
 int main() {
 	Person PersonArray[3];
 	string n, t;
-	cout << "ÀÌ¸§°ú ÀüÈ­ ¹øÈ£¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n";
+	cout << "ì´ë¦„ê³¼ ì „í™” ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”.\n";
 	for (int i = 0; i < 3; i++) {
-		cout << "»ç¶÷ " << 1 + i << ">>";
+		cout << "ì‚¬ëžŒ " << 1 + i << ">>";
 		cin >> n >> t;
 		PersonArray[i].set(n, t);
 		PersonArray[i].getName();
 		PersonArray[i].getTel();
 	}
-	cout << "¸ðµç »ç¶÷ÀÇ ÀÌ¸§Àº" << PersonArray[0].getName() << PersonArray[1].getName() << PersonArray[2].getName();
-	cout << "\nÀüÈ­¹øÈ£ °Ë»öÇÕ´Ï´Ù. ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä. >>";
+	cout << "ëª¨ë“  ì‚¬ëžŒì˜ ì´ë¦„ì€" << PersonArray[0].getName() << " " << PersonArray[1].getName() << " " << PersonArray[2].getName();
+	cout << "\nì „í™”ë²ˆí˜¸ ê²€ìƒ‰í•©ë‹ˆë‹¤. ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”. >>";
 	string x, y;
 	cin >> x;
 	for (int i = 0; i < 3; i++) {
@@ -32,5 +32,5 @@ int main() {
 			y = PersonArray[i].getTel();
 		}
 	}
-	cout << "ÀüÈ­¹øÈ£´Â " << y;
+	cout << "ì „í™”ë²ˆí˜¸ëŠ” " << y;
 }
