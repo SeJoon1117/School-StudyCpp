@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	cout << "7+23+5+100+25¿Í °°ÀÌ µ¡¼À ¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä.\n";
+	cout << "7+23+5+100+25ì™€ ê°™ì´ ë§ì…ˆ ë¬¸ìžì—´ì„ ìž…ë ¥í•˜ì„¸ìš”.\n";
 	string str;
 	getline(cin, str, '\n');
 	int sum = 0, startIndex = 0;
@@ -23,5 +23,5 @@ int main() {
 		sum = sum + stoi(part);
 		startIndex = findex + 1;
 	}
-	cout << "¼ýÀÚµéÀÇ ÇÕÀº" << sum;
+	cout << "ìˆ«ìžë“¤ì˜ í•©ì€ " << sum;
 }
