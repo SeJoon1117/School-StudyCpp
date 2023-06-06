@@ -3,40 +3,40 @@
 #include <cstring>
 using namespace std;
 
-class Person { // Person Å¬·¡½º ¼±¾ğ
+class Person { 
 	char* name;
 	int id;
 public:
-	Person(int id, const char* name); // »ı¼ºÀÚ
-	Person(const Person& person); // º¹»ç »ı¼ºÀÚ
-	~Person(); // ¼Ò¸êÀÚ
+	Person(int id, const char* name);
+	Person(const Person& person);
+	~Person(); 
 	void changeName(const char* name);
 	void show() { cout << id << ',' << name << endl; }
 };
 
-Person::Person(int id, const char* name) { // »ı¼ºÀÚ
+Person::Person(int id, const char* name) { 
 	this->id = id;
-	int len = strlen(name); // nameÀÇ ¹®ÀÚ °³¼ö
-	this->name = new char[len + 1]; // name ¹®ÀÚ¿­ °ø°£ À´ç
-	strcpy(this->name, name); // name¿¡ ¹®ÀÚ¿­ º¹»ç
+	int len = strlen(name); 
+	this->name = new char[len + 1]; 
+	strcpy(this->name, name);
 }
 
-Person::Person(const Person& person) { // º¹»ç »ı¼ºÀÚ
-	this->id = person.id; // id °ª º¹»ç
-	int len = strlen(person.name);// nameÀÇ ¹®ÀÚ °³¼ö
-	this->name = new char[len + 1]; // nameÀ» À§ÇÑ °ø°£ À´ç
-	strcpy(this->name, person.name); // nameÀÇ ¹®ÀÚ¿­ º¹»ç
-	cout << "º¹»ç »ı¼ºÀÚ ½ÇÇà. ¿øº» °´Ã¼ÀÇ ÀÌ¸§ " << this->name << endl;
+Person::Person(const Person& person) { 
+	this->id = person.id; 
+	int len = strlen(person.name);
+	this->name = new char[len + 1]; 
+	strcpy(this->name, person.name); 
+	cout << "ë³µì‚¬ ìƒì„±ì ì‹¤í–‰. ì›ë³¸ ê°ì²´ì˜ ì´ë¦„ " << this->name << endl;
 }
 
-Person::~Person() {// ¼Ò¸êÀÚ
-	if (name) // ¸¸ÀÏ name¿¡ µ¿Àû ÇÒ´çµÈ ¹è¿­ÀÌ ÀÖÀ¸¸é
-		delete[] name; // µ¿Àû ÇÒ´ç ¸Ş¸ğ¸® ¼Ò¸ê
+Person::~Person() {
+	if (name) 
+		delete[] name; 
 }
 
-void Person::changeName(const char* name) { // ÀÌ¸§ º¯°æ
+void Person::changeName(const char* name) { 
 	if (strlen(name) > strlen(this->name))
-		return; // ÇöÀç name¿¡ ÇÒ´çµÈ ¸Ş¸ğ¸®º¸´Ù ±ä ÀÌ¸§À¸·Î ¹Ù²Ü ¼ö ¾ø´Ù.
+		return; 
 	strcpy(this->name, name);
 }
 
