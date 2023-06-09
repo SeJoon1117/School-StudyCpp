@@ -46,12 +46,12 @@ bool ColorPoint::equals(ColorPoint p) {
 int main() {
 	Point p; 
 	p.set(2, 3);
-	//	p.x = 5; ����
-	//	p.y = 5; ����
+	//p.x = 5;	protected는 본인과 파생 클래스만 접근 가능하기에 오류
+	//p.y = 5;	protected는 본인과 파생 클래스만 접근 가능하기에 오류
 	p.showPoint();
 	ColorPoint cp;
-	//	cp.x = 10; ���� 
-	//	cp.y = 10; ����
+	//cp.x = 10;	protected는 본인과 파생 클래스만 접근 가능하기에 오류
+	//cp.y = 10; 	protected는 본인과 파생 클래스만 접근 가능하기에 오류
 	cp.set(3, 4);
 	cp.setColor("Red");
 	cp.showColorPoint();
