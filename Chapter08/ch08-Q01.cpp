@@ -18,7 +18,7 @@ public:
 		this->name = name;
 	}
 	void show() {
-		cout << "¹ÝÁö¸§ÀÌ " << getRadius() << "ÀÎ " << name;
+		cout << "ë°˜ì§€ë¦„ì´ " << getRadius() << "ì¸ " << name;
 	}
 };
 
