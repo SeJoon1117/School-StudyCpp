@@ -175,4 +175,41 @@ Chap 04. 객체 포인터와 객체 배열, 객체의 동적 생성
 		1. 클래스의 멤버 함수에서만 사용
 		2. 정적 멤버 함수(static member function)는 사용할 수 없음
 
-	string 클래스
+	string 클래스에 있는 문법들
+	ex.
+		string name = "sejoon"
+		string names = "sejun"
+		
+		getline(cin, string객체, '끝을 알리는 문자')
+			- '끝을 알리는 문자'가 올때까지 입력된 문자들을 string객체에 문자열로 저장.
+
+		compare() 함수
+			int 변수 = name.compare(names);
+				name과 names가 같으면 변수에 0을, name이 앞에 오면 음수를, 뒤에 오면 양수를 리턴.
+
+		append() 함수
+			name.append(" is man");
+				"sejoon is man" 출력
+
+		insert() 함수
+			name.insert(0, "Ahn ");
+				"Ahn sejoon" 출력
+
+		replace() 함수
+			name.replace(3, 4, "u");
+				"sejun" 출력
+
+		length(), size() 함수
+			int len = name.length();
+			int sizes = name.size();
+				두 개 다 동일하게 '6' 출력
+
+		erase(), clear() 함수
+			name.erase(0, 3);	//처음부터 3개의 문자 삭제
+				"joon" 출력 > erase() 함수는 일부분을 삭제
+			name.clear();
+				"" 출력 >  clear() 함수는 완전히 삭제
+
+		substr() 함수
+			string n = name.substr(2, 4);	//index 2부터 4개의 문자 리턴
+				"joon" 출력
